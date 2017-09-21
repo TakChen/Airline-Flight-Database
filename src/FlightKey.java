@@ -4,14 +4,12 @@
  */
 public class FlightKey implements Comparable<FlightKey> {
 	// keys: origin, destination, date, time
-	// FILL IN CODE
 	private String or;
 	private String dest;
 	private String date;
 	private String time;
 
 	FlightKey(String or, String dest, String date, String time) {
-		// FILL IN CODE
 		this.or = or;
 		this.dest = dest;
 		this.date = date;
@@ -19,14 +17,12 @@ public class FlightKey implements Comparable<FlightKey> {
 	}
 
 	FlightKey(FlightKey other) {
-		// FILL IN CODE
 		this.or = other.getOrigin();
 		this.dest = other.getDest();
 		this.date = other.getDate();
 		this.time = other.getTime();
 	}
 
-	// FILL IN CODE: Write getters for origin, destination, date and time
 	public String getOrigin() {
 		return this.or;
 	}
@@ -84,7 +80,6 @@ public class FlightKey implements Comparable<FlightKey> {
 	}
 
 	public String toString() {
-		// FILL IN CODE
 		return "(" + this.or + ", " + this.dest + ", " + this.date + ", " + this.time + ")";
 	}
 }
